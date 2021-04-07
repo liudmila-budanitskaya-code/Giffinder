@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="data"
+            type="com.example.android.giffinder.network.Data" />
+
+        <variable
+            name="clickListener"
+            type="com.example.android.giffinder.overview.GifTapListener" />
+    </data>
+
+    <ImageView
+        android:id="@+id/mars_image"
+        android:layout_width="197dp"
+        android:layout_height="170dp"
+        android:adjustViewBounds="true"
+        android:padding="2dp"
+        android:layout_margin="2dp"
+        android:scaleType="centerCrop"
+        android:onClick="@{() -> clickListener.onClick(data)}"
+        app:imageUrl="@{data.images.original.url}"
+        tools:src="@tools:sample/backgrounds/scenic" />
+</layout>
