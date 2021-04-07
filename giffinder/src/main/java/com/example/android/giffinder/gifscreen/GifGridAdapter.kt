@@ -24,7 +24,7 @@ class GifGridAdapter(private val clickListener: GifTapListener) : ListAdapter<Da
 
     override fun onBindViewHolder(holder: DataViewHolder, position: Int) {
         val data = getItem(position)
-        holder.bind(getItem(position)!!, clickListener)
+        holder.bind(data!!, clickListener)
     }
 
     class DataViewHolder(
