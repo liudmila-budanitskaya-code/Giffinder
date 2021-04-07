@@ -1,5 +1,7 @@
 package com.example.android.giffinder
 
+import android.app.AlertDialog
+import android.app.Dialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -26,7 +28,7 @@ class UrlDialog : DialogFragment() {
     ): View? {
 
         val binding = UrlDialogBinding.inflate(inflater)
-        binding.textView.text = passedUrl
+        binding.url.text = passedUrl
         binding.shareIcon.setOnClickListener {
             startActivity(Intent.createChooser(Intent().apply {
                 action = Intent.ACTION_SEND
