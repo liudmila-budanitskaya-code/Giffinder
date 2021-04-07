@@ -2,8 +2,8 @@
 <androidx.fragment.app.FragmentContainerView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/overviewFragment"
-    android:name="com.example.android.giffinder.overview.GifGridFragment"
+    android:id="@+id/gifscreen_fragment"
+    android:name="com.example.android.giffinder.gifscreen.GifGridFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:layout="@layout/fragment_gif_grid" />

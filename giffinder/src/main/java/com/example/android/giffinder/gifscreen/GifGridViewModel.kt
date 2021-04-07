@@ -1,4 +1,4 @@
-package com.example.android.giffinder.overview
+package com.example.android.giffinder.gifscreen
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

@@ -11,7 +11,7 @@
 
         <variable
             name="clickListener"
-            type="com.example.android.giffinder.overview.GifTapListener" />
+            type="com.example.android.giffinder.gifscreen.GifTapListener" />
     </data>
 
     <ImageView

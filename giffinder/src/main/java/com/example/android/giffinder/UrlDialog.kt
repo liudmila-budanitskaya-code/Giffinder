@@ -8,15 +8,15 @@ import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
 import com.example.android.giffinder.databinding.UrlDialogBinding
 
-private const val ARG_PARAM1 = "param1"
+private const val PASSED_URL = "passed_url"
 
 class UrlDialog : DialogFragment() {
-    private var param1: String? = null
+    private var passedUrl: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
+            passedUrl = it.getString(PASSED_URL)
         }
     }
 
@@ -26,13 +26,11 @@ class UrlDialog : DialogFragment() {
     ): View? {
 
         val binding = UrlDialogBinding.inflate(inflater)
-
-        binding.textView.text = param1
-
+        binding.textView.text = passedUrl
         binding.shareIcon.setOnClickListener {
             startActivity(Intent.createChooser(Intent().apply {
                 action = Intent.ACTION_SEND
-                putExtra(Intent.EXTRA_TEXT, param1)
+                putExtra(Intent.EXTRA_TEXT, passedUrl)
                 type = "text/plain"
             }, null))
         }
@@ -40,12 +38,11 @@ class UrlDialog : DialogFragment() {
     }
 
     companion object {
-
         @JvmStatic
         fun newInstance(param1: String) =
             UrlDialog().apply {
                 arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
+                    putString(PASSED_URL, param1)
                 }
             }
     }

@@ -8,7 +8,7 @@ import coil.load
 import coil.request.ImageRequest
 import com.example.android.giffinder.MainApplication.Companion.applicationContext
 import com.example.android.giffinder.network.Data
-import com.example.android.giffinder.overview.GifGridAdapter
+import com.example.android.giffinder.gifscreen.GifGridAdapter
 
 @BindingAdapter("imageUrl")
 fun bindImage(imgView: ImageView, imgUrl: String?) {
