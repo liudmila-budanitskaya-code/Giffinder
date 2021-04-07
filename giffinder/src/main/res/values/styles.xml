@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="search_field">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/view_border</item>
+        <item name="android:drawableStart">@drawable/baseline_search_24</item>
+        <item name="android:iconifiedByDefault">false</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:queryHint">Search Here</item>
+    </style>
+
+    <style name="search_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/go_button_xml</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="recycler_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">6dp</item>
+    </style>
+
+    <style name="imageview">
+        <item name="android:layout_width">197dp</item>
+        <item name="android:layout_height">170dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="dialog" parent="MaterialAlertDialog.MaterialComponents.Title.Panel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="text" parent="MaterialAlertDialog.MaterialComponents.Title.Panel">
+        <item name="android:autoLink">web</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="imagebutton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@android:color/transparent</item>
+        <item name="android:contentDescription">@string/share</item>
+    </style>
+
+    <style name="text_two">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">4</item>
+    </style>
+
+    <style name="linear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+</resources>

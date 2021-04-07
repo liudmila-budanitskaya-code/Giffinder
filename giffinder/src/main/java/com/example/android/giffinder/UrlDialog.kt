@@ -3,10 +3,13 @@ package com.example.android.giffinder
 import android.app.AlertDialog
 import android.app.Dialog
 import android.content.Intent
+import android.graphics.text.LineBreaker.JUSTIFICATION_MODE_INTER_WORD
+import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.RequiresApi
 import androidx.fragment.app.DialogFragment
 import com.example.android.giffinder.databinding.UrlDialogBinding
 
@@ -22,6 +25,7 @@ class UrlDialog : DialogFragment() {
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

@@ -25,26 +25,17 @@
 
                 <EditText
                     android:id="@+id/searchView"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:drawableStart="@drawable/baseline_search_24"
-                    android:hint="@string/search"
-                    android:iconifiedByDefault="false"
-                    android:queryHint="Search Here" />
+                    style="@style/search_field"
+                    android:hint="@string/search" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/search_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/go_button_xml"
-                    android:text="@string/search"
-                    android:textColor="@android:color/white" />
+                    style="@style/search_button"
+                    android:text="@string/search" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/photos_grid"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:padding="6dp"
+                    style="@style/recycler_view"
                     app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
                     app:listData="@{viewModel.gifs}"
                     app:spanCount="2"
@@ -52,12 +43,6 @@
                     tools:listitem="@layout/grid_view_item" />
 
             </LinearLayout>
-
-
         </androidx.core.widget.NestedScrollView>
-
-
     </RelativeLayout>
-
-
 </layout>
